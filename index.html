@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نویسار — دستیار هوشمند تولید محتوای فارسی برای وردپرس</title>
+<meta name="description" content="دموی محصول نویسار: افزونهٔ هوشمند تولید محتوای فارسی برای وردپرس و ووکامرس با موتور نگارش فارسی، تولید انبوه، ۷ سرویس هوش مصنوعی و ۱۸ پرامپت آماده.">
+<style>
+@font-face { font-family:'Vazirmatn'; src:url('fonts/Vazirmatn-Regular.woff2') format('woff2'); font-weight:400; }
+@font-face { font-family:'Vazirmatn'; src:url('fonts/Vazirmatn-Medium.woff2') format('woff2'); font-weight:500; }
+@font-face { font-family:'Vazirmatn'; src:url('fonts/Vazirmatn-SemiBold.woff2') format('woff2'); font-weight:600; }
+@font-face { font-family:'Vazirmatn'; src:url('fonts/Vazirmatn-Bold.woff2') format('woff2'); font-weight:700; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Vazirmatn', Tahoma, sans-serif; background:#0d0b22; color:#fff; overflow-x:hidden; }
+.topbar { height:6px; background:linear-gradient(90deg,#6fd6ff,#9b8cff 34%,#6d5ae0 58%,#ffb95c); }
+.wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+
+/* HERO */
+.hero { position:relative; padding:72px 0 64px;
+  background:
+    radial-gradient(ellipse 900px 620px at 85% 110%, rgba(155,140,255,.28), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 8% -10%, rgba(64,196,255,.18), transparent 55%),
+    linear-gradient(122deg,#0d0b22 0%,#191348 40%,#2c2277 75%,#4636ad 100%); }
+.hero-inner { display:flex; align-items:center; gap:26px; flex-wrap:wrap; }
+.logo { width:88px; height:88px; border-radius:24px; flex-shrink:0;
+  background:linear-gradient(135deg,#8a7bff,#5745c4);
+  box-shadow:0 14px 44px rgba(109,90,224,.55), inset 0 2px 0 rgba(255,255,255,.28);
+  display:flex; align-items:center; justify-content:center; font-size:48px; font-weight:700; }
+.hero h1 { font-size:44px; font-weight:700; letter-spacing:-.5px; }
+.hero h1 span { background:linear-gradient(90deg,#c9c0ff,#8fe3ff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.vchip { display:inline-block; background:rgba(126,242,182,.14); color:#7ef2b6; border:1.5px solid rgba(126,242,182,.45);
+  border-radius:999px; padding:5px 16px; font-size:15px; font-weight:600; margin-inline-start:14px; vertical-align:middle; }
+.hero p { margin-top:14px; font-size:19px; line-height:1.9; color:rgba(255,255,255,.92); max-width:640px; }
+.hero p b { color:#ffe7bd; }
+.stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin-top:34px; }
+.stat { background:rgba(255,255,255,.08); border:1.5px solid rgba(255,255,255,.18); border-radius:16px; padding:16px 18px; }
+.stat .n { font-size:26px; font-weight:700; color:#c9c0ff; }
+.stat .t { font-size:14px; color:rgba(255,255,255,.75); margin-top:4px; font-weight:500; }
+
+/* SECTIONS */
+section { padding:64px 0; }
+.sec-title { font-size:30px; font-weight:700; margin-bottom:8px; }
+.sec-title b { color:#9b8cff; }
+.sec-sub { color:rgba(255,255,255,.7); font-size:16.5px; font-weight:500; margin-bottom:36px; }
+
+/* SCREENSHOTS */
+.shot-hero { border-radius:18px; overflow:hidden; box-shadow:0 40px 90px rgba(0,0,0,.5), 0 0 0 1.5px rgba(255,255,255,.16); margin-bottom:22px; }
+.shot-hero img { width:100%; display:block; }
+.shot-cap { background:rgba(17,14,40,.94); border:1.5px solid rgba(255,255,255,.16); border-top:none;
+  border-radius:0 0 18px 18px; padding:14px 20px; font-size:15.5px; font-weight:600; color:#e8e6ff; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
+.shot { background:rgba(255,255,255,.06); border:1.5px solid rgba(255,255,255,.16); border-radius:16px; overflow:hidden; }
+.shot img { width:100%; height:210px; object-fit:cover; object-position:top center; display:block; }
+.shot .cap { padding:13px 16px; font-size:14.5px; font-weight:600; color:rgba(255,255,255,.9); }
+
+/* WORKFLOW */
+.steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+.step { background:rgba(255,255,255,.07); border:1.5px solid rgba(255,255,255,.16); border-radius:18px; padding:22px; }
+.step .num { width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+  font-size:20px; font-weight:700; margin-bottom:14px; }
+.n1 { background:linear-gradient(135deg,#9b8cff,#6d5ae0); } .n2 { background:linear-gradient(135deg,#7ed0ff,#3e8ee0); }
+.n3 { background:linear-gradient(135deg,#ffd66b,#e8932d); } .n4 { background:linear-gradient(135deg,#7ef2b6,#1e9e5a); }
+.step h3 { font-size:18px; font-weight:700; margin-bottom:8px; }
+.step p { font-size:14px; color:rgba(255,255,255,.72); line-height:1.85; font-weight:500; }
+
+/* FEATURES */
+.feats { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+.feat { display:flex; gap:14px; align-items:flex-start; background:rgba(255,255,255,.06);
+  border:1.5px solid rgba(255,255,255,.14); border-radius:14px; padding:18px; }
+.feat .fi { width:40px; height:40px; border-radius:11px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:18px; }
+.feat .ft { font-size:15.5px; font-weight:700; }
+.feat .fs { font-size:13px; color:rgba(255,255,255,.68); margin-top:3px; line-height:1.7; font-weight:500; }
+
+/* FOOTER */
+footer { border-top:1.5px solid rgba(255,255,255,.14); padding:30px 0 40px; background:rgba(9,7,24,.7); }
+footer .reqs { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+.req { background:rgba(255,255,255,.07); border:1.5px solid rgba(255,255,255,.15); border-radius:999px;
+  padding:8px 18px; font-size:14px; font-weight:600; color:rgba(255,255,255,.85); }
+footer .brand { text-align:center; margin-top:20px; color:rgba(255,255,255,.45); font-size:14px; font-weight:500; }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="logo">ن</div>
+      <div>
+        <h1>نویسار <span>| دستیار هوشمند تولید محتوای فارسی</span><span class="vchip">نسخهٔ ۱.۱</span></h1>
+        <p>افزونهٔ وردپرس برای تولید خودکار توضیحات محصول، متن سئو و مقاله — <b>با کلید API خودتان (BYOK)</b>،
+        موتور نگارش فارسی اختصاصی و پشتیبان‌گیری خودکار. سازگار با ووکامرس، گوتنبرگ و افزونه‌های سئو.</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">۷</div><div class="t">سرویس هوش مصنوعی (OpenAI، Claude، DeepSeek، Groq، OpenRouter، ایرانی، Ollama)</div></div>
+      <div class="stat"><div class="n">۵</div><div class="t">فیلد در یک فراخوانی: توضیح کامل، کوتاه، سئو، متا، برچسب</div></div>
+      <div class="stat"><div class="n">۱۸</div><div class="t">پرامپت فارسی آمادهٔ متغیردار</div></div>
+      <div class="stat"><div class="n">۲۰۰</div><div class="t">تغییر پشتیبان‌گیری خودکار + بازیابی یک‌کلیکی</div></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-title">نمایش <b>رابط کاربری</b></div>
+    <div class="sec-sub">پیشخوان نویسار در پیشخوان مدیریت وردپرس — راست‌چین، فارسی و کاملاً شخصی‌سازی‌پذیر</div>
+    <div class="shot-hero">
+      <img src="shots/navisar-dashboard.png" alt="پیشخوان نویسار">
+      <div class="shot-cap">پیشخوان نویسار: آمار مصرف، راهنمای شروع سریع و دسترسی به همهٔ ابزارها</div>
+    </div>
+    <div class="grid">
+      <div class="shot"><img src="shots/navisar-bulk.png" alt="تولید انبوه"><div class="cap">تولید انبوه محصولات ووکامرس با پیش‌نمایش قبل/بعد</div></div>
+      <div class="shot"><img src="shots/navisar-appearance.png" alt="ظاهر و شخصی‌سازی"><div class="cap">ظاهر و شخصی‌سازی: ۸ پالت، حالت تیره، اندازهٔ قلم و CSS سفارشی</div></div>
+      <div class="shot"><img src="shots/navisar-prompts.png" alt="کتابخانه پرامپت"><div class="cap">کتابخانهٔ ۱۸ پرامپت فارسی متغیردار</div></div>
+      <div class="shot"><img src="shots/navisar-playground.png" alt="آزمایشگاه"><div class="cap">آزمایشگاه: تست پرامپت با نمونه‌های آماده</div></div>
+      <div class="shot"><img src="shots/navisar-usage.png" alt="مصرف و هزینه"><div class="cap">گزارش مصرف: توکن، فراخوانی و برآورد هزینه</div></div>
+      <div class="shot"><img src="shots/navisar-settings.png" alt="تنظیمات"><div class="cap">تنظیمات: سرویس، کلید API، نقش‌ها و پشتیبان‌گیری</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:rgba(255,255,255,.03); border-top:1.5px solid rgba(255,255,255,.1); border-bottom:1.5px solid rgba(255,255,255,.1);">
+  <div class="wrap">
+    <div class="sec-title">گردش کار در <b>چهار گام</b></div>
+    <div class="sec-sub">از محصول خام تا محتوای فروشنده‌شده — همه خودکار، همه فارسی</div>
+    <div class="steps">
+      <div class="step"><div class="num n1">۱</div><h3>انتخاب محصولات</h3><p>فیلتر بر اساس دسته، وضعیت یا فقط محصولات بدون توضیح</p></div>
+      <div class="step"><div class="num n2">۲</div><h3>تولید هوشمند</h3><p>توضیحات، سئو و برچسب‌ها با یک فراخوانی ساختاریافتهٔ API</p></div>
+      <div class="step"><div class="num n3">۳</div><h3>بررسی خروجی</h3><p>نمایش قبل/بعد هر فیلد؛ هیچ تغییری بدون تأیید شما اعمال نمی‌شود</p></div>
+      <div class="step"><div class="num n4">۴</div><h3>اعمال و پشتیبان</h3><p>ذخیرهٔ خودکار نسخهٔ قبلی و بازیابی با یک کلیک</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-title">امکانات <b>کلیدی</b></div>
+    <div class="sec-sub">هر چیزی که برای تولید محتوای فارسی حرفه‌ای لازم است</div>
+    <div class="feats">
+      <div class="feat"><div class="fi" style="background:#f0edff;color:#6d5ae0;">✍️</div><div><div class="ft">موتور نگارش فارسی</div><div class="fs">نیم‌فاصلهٔ خودکار (می‌رود، کتاب‌ها)، تبدیل ي→ی و ك→ک، ارقام فارسی و نشانه‌گذاری استاندارد</div></div></div>
+      <div class="feat"><div class="fi" style="background:#e7f6ff;color:#2f6fed;">🔗</div><div><div class="ft">یکپارچگی سئو</div><div class="fs">Yoast، Rank Math، AIOSEO و SEOPress — ذخیرهٔ مستقیم فیلدها در افزونهٔ سئوی شما</div></div></div>
+      <div class="feat"><div class="fi" style="background:#fff6e6;color:#c77800;">🔌</div><div><div class="ft">BYOK — کلید خودتان</div><div class="fs">OpenAI، Claude، DeepSeek، Groq، OpenRouter، سرویس‌های ایرانی و Ollama محلی</div></div></div>
+      <div class="feat"><div class="fi" style="background:#e7f7ef;color:#12945f;">🛡️</div><div><div class="ft">پشتیبان خودکار</div><div class="fs">۲۰۰ تغییر اخیر با بازیابی یک‌کلیکی — خیالتان راحت است</div></div></div>
+      <div class="feat"><div class="fi" style="background:#f0edff;color:#6d5ae0;">🛠️</div><div><div class="ft">ابزار درون‌خطی ادیتور</div><div class="fs">بازنویسی، گسترش، کوتاه‌سازی، ویرایش نگارشی، ترجمه و تغییر لحن روی متن انتخابی در گوتنبرگ و کلاسیک</div></div></div>
+      <div class="feat"><div class="fi" style="background:#ffeef2;color:#c2255c;">📊</div><div><div class="ft">گزارش مصرف و هزینه</div><div class="fs">شمارش توکن و فراخوانی هر سرویس با برآورد هزینه به نرخ دلار خودتان</div></div></div>
+      <div class="feat"><div class="fi" style="background:#e7f6ff;color:#2f6fed;">🖼️</div><div><div class="ft">alt تصاویر</div><div class="fs">تولید انبوه متن جایگزین برای تصاویر کتابخانهٔ رسانه</div></div></div>
+      <div class="feat"><div class="fi" style="background:#fff6e6;color:#c77800;">🎨</div><div><div class="ft">ظاهر کاملاً قابل شخصی‌سازی</div><div class="fs">۸ رنگ‌مایه + رنگ سفارشی، حالت تیره/روشن/خودکار، اندازهٔ قلم، فشردگی و گردی گوشه‌ها با پیش‌نمایش زنده</div></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="reqs">
+      <div class="req">وردپرس ۵.۸+</div>
+      <div class="req">پی‌اچ‌پی ۷.۴+ (تست تا ۸.۲)</div>
+      <div class="req">ووکامرس (اختیاری)</div>
+      <div class="req">گوتنبرگ و ادیتور کلاسیک</div>
+    </div>
+    <div class="brand">نویسار — نسخهٔ ۱.۱.۰ | دستیار هوشمند تولید محتوای فارسی برای وردپرس</div>
+  </div>
+</footer>
+</body>
+</html>
